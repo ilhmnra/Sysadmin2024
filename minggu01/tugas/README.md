@@ -1,4 +1,7 @@
 # Penjelasan File less/etc/group pada Debian
+**Nama** : Aulia Ilham</br>
+**NRP** : 3122600024 </br>
+**Kelas** : 2 D4 IT A </br>
 
 ## Fungsi
 

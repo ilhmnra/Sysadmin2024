@@ -1,4 +1,7 @@
 # Instalasi Debian
+**Nama** : Aulia Ilham </br>
+**NRP** : 3122600024 </br>
+**Kelas** : 2 D4 IT A </br>
 
 1. Install file .iso dari Debian [di sini](https://www.debian.org/download).
 2. Install VirtualBox [di sini](https://www.virtualbox.org/wiki/Downloads) dan jalankan _setup_-nya.
@@ -30,11 +33,7 @@
 14. Selanjutnya, isi domain name. Jika tidak ada, Anda dapat mengosonginya.
     ![alt](./assets/16.png)
 15. Lakukan setup users dan password untuk root.
-    ![alt](./assets/17.png)
 16. Lakukan konfigurasi untuk user.
-    ![alt](./assets/18.png)
-    ![alt](./assets/19.png)
-    ![alt](./assets/20.png)
 17. Lakukan konfigurasi jam untuk sistem.
     ![alt](./assets/21.png)
 18. Pada bagian ini, karena konfigurasi partisi akan dilakukan secara manual, maka pilih opsi "Manual".
@@ -100,4 +99,4 @@
     ![alt](./assets/47.png)
 45. Tunggu instalasi software hingga selesai.
     ![alt](./assets/48.png)
-46. Debian telah diinstal
+46. Debian telah ter-install
