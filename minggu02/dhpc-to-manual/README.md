@@ -1,5 +1,5 @@
-    Nama		        : Rakha Putra Pratama
-    NRP		        : 3122600005
+    Nama		        : Aulia Ilham
+    NRP		        : 3122600024
     Kelas		        : 2 D4 IT A
     Mata Kuliah	        : Workshop Administrasi Jaringan
     Dosen Pengampu	        : Dr. Ferry Astika Saputra S.T., M.Sc
