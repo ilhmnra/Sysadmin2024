@@ -43,7 +43,7 @@
 
 1. Install Apache2
    ```bash
-   sudo apt -y install apache2
+   sudo sudo apt -y install apache2
    ```
 2. Mengkonﬁgurasi Apache2
 
@@ -79,7 +79,7 @@
 4. Install PHP 8.2
 
    ```bash
-   sudo apt -y install php8.2 php8.2-mbstring php-pear
+   sudo sudo apt -y install php8.2 php8.2-mbstring php-pear
    ```
 
    ```bash
@@ -113,7 +113,7 @@
 5. Install PHP-FM
 
    ```bash
-   sudo apt -y install php-fpm
+   sudo sudo apt -y install php-fpm
    ```
 
 6. Mengkonﬁgurasi PHP-FM pada ﬁle konﬁgurasi Apache
@@ -154,14 +154,12 @@
    ```
 8. Lalu lakukan test di browser
 
-   ![Test php](assets/tes-php.jpeg)
-
 ## Database System : MariaDB
 
-1. Lakukan nstalasi Maria DB 10.11
+1. Lakukan instalasi Maria DB 10.11
 
    ```bash
-   apt -y install mariadb-server
+   sudo apt -y install mariadb-server
    ```
 
    ```bash
@@ -185,10 +183,10 @@
 
 ### POSTFIX : SMTP Server (TCP 25)
 
-1. install postﬁx
+1. install postfix
 
    ```bash
-   apt -y install postﬁx sasl2-bin
+   sudo apt -y install postfix sasl2-bin
    # on this example, proceed to select [No Conﬁguration]
    # because conﬁgure all manually
    +--------+ Postﬁx Conﬁguration +--------+
@@ -207,13 +205,13 @@
    ```
 
    ```bash
-   cp /usr/share/postﬁx/main.cf.dist /etc/postﬁx/main.cf
+   cp /usr/share/postfix/main.cf.dist /etc/postfix/main.cf
    ```
 
    ```bash
-   vi /etc/postﬁx/main.cf
+   vi /etc/postfix/main.cf
     # line 82 : uncomment
-    mail_owner = postﬁx
+    mail_owner = postfix
     # line 98 : uncomment and specify hostname
     myhostname = mail.Kelompok8.local
     # line 106 : uncomment and specify domainname
@@ -240,7 +238,7 @@
     #smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)
     smtpd_banner = $myhostname ESMTP
     # line 659 : add
-    sendmail_path = /usr/sbin/postﬁx
+    sendmail_path = /usr/sbin/postfix
     # line 664 : add
     newaliases_path = /usr/bin/newaliases
     # line 669 : add
@@ -280,13 +278,13 @@
    ```
 
    ```bash
-   systemctl restart postﬁx
+   systemctl restart postfix
    ```
 
 2. Menambahkan konﬁgurasi anti spam
 
    ```bash
-   vi /etc/postﬁx/main.cf
+   vi /etc/postfix/main.cf
     # add to the end
     # reject unknown clients that forward lookup and reverse lookup of their hostnames on DNS do
     not match
@@ -302,7 +300,7 @@
    ```
 
    ```bash
-    systemctl restart postﬁx
+    systemctl restart postfix
    ```
 
 ### DOVECOT : IMAP4 (TCP 143) and POP3 (TCP110) Server
@@ -310,7 +308,7 @@
 1. Lakukan instalasi Dovecot Server
 
    ```bash
-   apt -y install dovecot-core dovecot-pop3d dovecot-imapd
+   sudo apt -y install dovecot-core dovecot-pop3d dovecot-imapd
    ```
 
    ```bash
@@ -337,10 +335,10 @@
    vi /etc/dovecot/conf.d/10-master.conf
     # line 107-109 : uncomment and add
     # Postﬁx smtp-auth
-    unix_listener /var/spool/postﬁx/private/auth {
+    unix_listener /var/spool/postfix/private/auth {
      mode = 0666
-     user = postﬁx
-     group = postﬁx
+     user = postfix
+     group = postfix
     }
    ```
 
