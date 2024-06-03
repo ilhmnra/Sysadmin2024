@@ -350,12 +350,8 @@
 
 Akan terlihat hasilnyaseperti dibawah, dengan status Server (LISTEN) : MariaDB(MySQL), IMAP, POP3, DNS(domain), IMAPS, POP3S, SSH, Postﬁx (SMTP)
 
-![final cek](assets/final-cek.png)
-
 Melakukan Cek terhadap Layanan Posﬁx
 
 ```bash
 telnet mail.Kelompok8.local 25
 ```
-
-![mail cek](assets/telnet.png)
