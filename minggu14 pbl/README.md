@@ -3,7 +3,7 @@
 **Kelas** : 2 D4 IT A </br>
 
 
-# Jawaban intuk pertanyaan tambahan yang diberikan oleh Bapak Dr Ferry Astika Saputra ST, M.Sc	
+# Jawaban untuk pertanyaan tambahan yang diberikan oleh Bapak Dr Ferry Astika Saputra ST, M.Sc	
 **Pertanyaan : "apa yang dimaksud dari busy system, busy user, busy lowait, busy irqs, busy other, idle in this?"**
 
 Dalam konteks pemantauan sistem menggunakan Grafana dan Prometheus, metrik yang ditampilkan seperti "Busy System," "Busy User," "Busy Iowait," "Busy IRQs," "Busy Other," dan "Idle" merujuk pada bagaimana CPU menghabiskan waktu pemrosesannya. Berikut adalah penjelasan untuk masing-masing metrik tersebut:
